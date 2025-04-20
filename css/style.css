@@ -1,0 +1,143 @@
+:root {
+  --color-red: #DC5356;
+  --color-blue: #536ADC;
+  --color-blue-two: #3B4980;
+  --color-black: #000000;
+  --color-black_size: #202020;
+  --color-grey: #707070;
+  --color-grey-hover: #F5F5F5;
+  --box-shadow:  0px 5px 10px rgba(0, 0, 0, 0.25);
+  --border-solid: solid 2px rgba(0, 0, 0, 0.4);
+  --transition: all 0.3s ease 0s; }
+
+ul, p, h1, h2, h3, figure, figcaption {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none !important; }
+
+.clear {
+  clear: both; }
+
+* {
+  block-size: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #f8f8f8; }
+
+html, body {
+  height: 100%; }
+
+.wrapper {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+main {
+  font-family: 'Afacad';
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto; }
+  main svg {
+    color: #000000; }
+  main svg:hover {
+    color: red; }
+  main .navigation .container {
+    padding: 15px; }
+  main .navigation nav {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  main .navigation button:hover, main .navigation .active {
+    background-color: #2C2C2C;
+    color: #F5F5F5; }
+    main .navigation button:hover:hover, main .navigation .active:hover {
+      background-color: var(--color-grey-hover);
+      color: #000000; }
+  main .navigation button {
+    margin: 5px 0 5px 0;
+    width: 11.3rem;
+    height: 4.1rem;
+    border-radius: 13px;
+    font-weight: 600;
+    font-size: 1.5rem;
+    border: 1px solid #898989;
+    -webkit-transition: var(--transition);
+    -o-transition: var(--transition);
+    transition: var(--transition);
+    background: var(--color-grey-hover); }
+    main .navigation button:hover {
+      background-color: #2C2C2C;
+      color: var(--color-grey-hover);
+      font-size: 1.6rem; }
+  main .items {
+    padding-bottom: 10px; }
+    main .items .container {
+      max-width: 1250px;
+      padding: 0 15px 0 15px; }
+      main .items .container .up a {
+        margin-top: 30px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center; }
+      main .items .container .item {
+        max-width: 1220px;
+        width: 100%;
+        overflow-x: scroll;
+        -webkit-scroll-snap-type: x mandatory;
+        -ms-scroll-snap-type: x mandatory;
+        scroll-snap-type: x mandatory;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        gap: 15px;
+        scrollbar-width: none; }
+        main .items .container .item .prod {
+          scroll-snap-align: center; }
+      main .items .container .line {
+        margin-top: 20px; }
+      main .items .container .title {
+        color: var(--color-black);
+        font-size: 1.87rem;
+        font-weight: 600; }
+      main .items .container .prod {
+        width: 290px;
+        border: 2px solid var(--color-grey);
+        border-radius: 15px;
+        margin-top: 15px;
+        -webkit-transition: var(--transition);
+        -o-transition: var(--transition);
+        transition: var(--transition); }
+        main .items .container .prod:hover {
+          background-color: #d8d8d868; }
+        main .items .container .prod figure {
+          padding-bottom: 10px;
+          border-bottom: 2px solid #898989; }
+        main .items .container .prod figcaption {
+          padding: 22px; }
+          main .items .container .prod figcaption .name_size a {
+            color: #202020;
+            font-size: 0.93rem; }
+          main .items .container .prod figcaption .name {
+            font-size: 1.56rem;
+            color: #202020;
+            font-weight: 800; }
+          main .items .container .prod figcaption .prise {
+            color: var(--color-blue-two);
+            font-size: 2.25rem;
+            font-weight: 800; }
+          main .items .container .prod figcaption .icon_shop {
+            margin-top: 10px; }

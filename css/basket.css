@@ -1,0 +1,100 @@
+:root {
+  --color-red: #DC5356;
+  --color-blue: #536ADC;
+  --color-blue-two: #3B4980;
+  --color-black: #000000;
+  --color-black_size: #202020;
+  --color-grey: #707070;
+  --color-grey-hover: #F5F5F5;
+  --box-shadow:  0px 5px 10px rgba(0, 0, 0, 0.25);
+  --border-solid: solid 2px rgba(0, 0, 0, 0.4);
+  --transition: all 0.3s ease 0s; }
+
+ul, p, h1, h2, h3, figure, figcaption {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none !important; }
+
+.clear {
+  clear: both; }
+
+* {
+  block-size: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #f8f8f8; }
+
+html, body {
+  height: 100%; }
+
+.wrapper {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+main {
+  font-family: 'Afacad';
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto; }
+  main .container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+    main .container .wrapper {
+      -webkit-box-shadow: var(--box-shadow);
+      box-shadow: var(--box-shadow);
+      padding: 30px;
+      border-radius: 15px; }
+      main .container .wrapper .meanig {
+        font-weight: 800;
+        font-size: 2rem;
+        color: var(--color-blue-two); }
+      main .container .wrapper .total_price {
+        margin-right: 40px; }
+      main .container .wrapper .total {
+        margin-top: 15px;
+        border-top: 1px solid #70707097;
+        text-align: right; }
+      main .container .wrapper .block_info {
+        padding: 15px; }
+    main .container .delete {
+      position: relative; }
+      main .container .delete .price_del {
+        position: absolute;
+        top: 58%; }
+    main .container .control {
+      margin-top: 15px; }
+      main .container .control h3 {
+        margin: 0 24px;
+        font-weight: 400;
+        font-size: 1.56rem; }
+      main .container .control button {
+        width: 31px;
+        height: 31px;
+        background: #70707040;
+        border: none;
+        border-radius: 10px; }
+    main .container .control_items {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      margin-top: 20px; }
