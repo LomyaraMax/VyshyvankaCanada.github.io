@@ -31,32 +31,27 @@
     <div class="container">
         <nav class="d-flex justify-content-between align-items-center">
             <div class="log col-2">
-                <a href="#">
+                <a class="user_logo" href="#">
                     <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M37.7916 45.0416C35.9583 45.5833 33.7916 45.8333 31.25 45.8333H18.75C16.2083 45.8333 14.0416 45.5833 12.2083 45.0416M37.7916 45.0416C37.3333 39.625 31.7708 35.3541 25 35.3541C18.2291 35.3541 12.6666 39.625 12.2083 45.0416M37.7916 45.0416C43.4583 43.4375 45.8333 39.125 45.8333 31.25V18.75C45.8333 8.33332 41.6666 4.16666 31.25 4.16666H18.75C8.33329 4.16666 4.16663 8.33332 4.16663 18.75V31.25C4.16663 39.125 6.54163 43.4375 12.2083 45.0416M25 29.5208C20.875 29.5208 17.5416 26.1667 17.5416 22.0417C17.5416 17.9167 20.875 14.5833 25 14.5833C29.125 14.5833 32.4583 17.9167 32.4583 22.0417C32.4583 26.1667 29.125 29.5208 25 29.5208Z" stroke="#292D32" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M37.7916 45.0416C35.9583 45.5833 33.7916 45.8333 31.25 45.8333H18.75C16.2083 45.8333 14.0416 45.5833 12.2083 45.0416M37.7916 45.0416C37.3333 39.625 31.7708 35.3541 25 35.3541C18.2291 35.3541 12.6666 39.625 12.2083 45.0416M37.7916 45.0416C43.4583 43.4375 45.8333 39.125 45.8333 31.25V18.75C45.8333 8.33332 41.6666 4.16666 31.25 4.16666H18.75C8.33329 4.16666 4.16663 8.33332 4.16663 18.75V31.25C4.16663 39.125 6.54163 43.4375 12.2083 45.0416M25 29.5208C20.875 29.5208 17.5416 26.1667 17.5416 22.0417C17.5416 17.9167 20.875 14.5833 25 14.5833C29.125 14.5833 32.4583 17.9167 32.4583 22.0417C32.4583 26.1667 29.125 29.5208 25 29.5208Z" stroke="#919191" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </a>
-                <a class="text_log" href="login.html">Log in/Register</a>
+                <!-- <a class="text_log" href="login.html">Log in/Register</a> -->
             </div>
             <a class="vsh text-center" href="../../../../index.html">Vyshyvanka</a>
             <div class="shop d-flex justify-content-end col-2">
-                <a href="#">
-                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M26.2917 43.3542C25.5833 43.6042 24.4167 43.6042 23.7083 43.3542C17.6667 41.2917 4.16666 32.6875 4.16666 18.1042C4.16666 11.6667 9.35416 6.45834 15.75 6.45834C19.5417 6.45834 22.8958 8.29168 25 11.125C27.1042 8.29168 30.4792 6.45834 34.25 6.45834C40.6458 6.45834 45.8333 11.6667 45.8333 18.1042C45.8333 32.6875 32.3333 41.2917 26.2917 43.3542Z" stroke="#292D32" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>     
-                </a>   
-                <a class="basket" href="../../basket.html">
+                <button id="cart-icon" class="basket">
                     <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M15.625 15.9792V13.9583C15.625 9.27082 19.3958 4.66665 24.0833 4.22915C29.6667 3.68749 34.375 8.08332 34.375 13.5625V16.4375M32.2823 25H32.301M17.6969 25H17.7156M18.75 45.8333H31.25C39.625 45.8333 41.125 42.4792 41.5625 38.3958L43.125 25.8958C43.6875 20.8125 42.2292 16.6667 33.3333 16.6667H16.6667C7.77084 16.6667 6.31251 20.8125 6.87501 25.8958L8.43751 38.3958C8.87501 42.4792 10.375 45.8333 18.75 45.8333Z" stroke="#292D32" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>       
-                </a>     
+                </button>     
             </div>  
         </nav>
     </div>
 </header>
 
         <main>
-            <section class="navigation">
+            <!-- <section class="navigation">
                 <div class="container col-12 d-flex justify-content-center">
                     <nav class="col-8 d-flex justify-content-between">
                         <a href="#"><button class="active">Wooman</button></a>
@@ -65,7 +60,7 @@
                         <a href="#"><button>Accessories</button></a>
                     </nav>
                 </div>
-            </section>
+            </section> -->
 
             <section class="items">
                 <div class="container">
@@ -75,159 +70,116 @@
                         </div>
                         <div class="item d-flex justify-content-between">
         <!-- бокс один -->
-                            <div class="prod">
+                            <div class="product">
                                 <figure>
-                                    <a href="pagesHTML/best/one.html">
-                                        <img src="images/images/vsh1 1.png" alt="img">
-                                    </a>
+                                <a href="pagesHTML/best/one.html">
+                                    <img src="images/images/vsh1 1.png" alt="img" class="product-image">
+                                </a>
                                 </figure>
                                 <figcaption>
-                                    <div class="header_fig d-flex justify-content-between">
-                                        <div class="name_size">
-                                                <div class="name">Product name</div>
-                                            <div class="size">
-                                                <a href="#">XS</a>
-                                                <a href="#">S</a>
-                                                <a href="#">M</a>
-                                                <a href="#">L</a>
-                                                <a href="#">XL</a>
-                                            </div>
-                                        </div>
-                                        <div class="prise d-flex align-items-center">65$</div>
+                                <div class="header_fig d-flex justify-content-between">
+                                    <div class="name_size">
+                                    <div class="name">Vyshyvanka</div>
+                                    <div class="size">
+                                        <a href="#" data-size="XS">XS</a>
+                                        <a href="#" data-size="S">S</a>
+                                        <a href="#" data-size="M">M</a>
+                                        <a href="#" data-size="L">L</a>
+                                        <a href="#" data-size="XL">XL</a>
                                     </div>
-                                    <div class="icon_shop d-flex justify-content-between">
-                                        <div class="like">
-                                            <a href="#">
-                                                <svg  width="50" height="50" viewBox="0 0 50 50" fill="white" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M26.2916 43.3542C25.5833 43.6042 24.4166 43.6042 23.7083 43.3542C17.6666 41.2917 4.16663 32.6875 4.16663 18.1042C4.16663 11.6667 9.35413 6.45834 15.75 6.45834C19.5416 6.45834 22.8958 8.29168 25 11.125C27.1041 8.29168 30.4791 6.45834 34.25 6.45834C40.6458 6.45834 45.8333 11.6667 45.8333 18.1042C45.8333 32.6875 32.3333 41.2917 26.2916 43.3542Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg> 
-                                            </a>   
-                                        </div>
-                                        <div class="basket">
-                                            <a href="#">
-                                                <svg width="50" height="50" viewBox="0 0 50 50" fill="white" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M15.625 15.9792V13.9583C15.625 9.27082 19.3958 4.66665 24.0833 4.22915C29.6667 3.68749 34.375 8.08332 34.375 13.5625V16.4375M32.2823 25H32.301M17.6969 25H17.7156M18.75 45.8333H31.25C39.625 45.8333 41.125 42.4792 41.5625 38.3958L43.125 25.8958C43.6875 20.8125 42.2292 16.6667 33.3333 16.6667H16.6667C7.77084 16.6667 6.31251 20.8125 6.87501 25.8958L8.43751 38.3958C8.87501 42.4792 10.375 45.8333 18.75 45.8333Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg> 
-                                            </a>  
-                                        </div>
                                     </div>
+                                    <div class="prise d-flex align-items-center" data-price="65">65$</div>
+                                </div>
+                                <div class="icon_shop d-flex justify-content-between">
+                                    <div class="basket">
+                                    <button class="add-to-cart-btn">Add to Cart</button>
+                                    </div>
+                                </div>
                                 </figcaption>
                             </div>
+          
         <!-- бокс два -->
-                            <div class="prod">
+                            <div class="product">
                                 <figure>
-                                    <a href="#">
-                                        <img src="images/images/vsh1 1.png" alt="img">
-                                    </a>
+                                <a href="pagesHTML/best/one.html">
+                                    <img src="images/images/vsh1 1.png" alt="img" class="product-image">
+                                </a>
                                 </figure>
                                 <figcaption>
-                                    <div class="header_fig d-flex justify-content-between">
-                                        <div class="name_size">
-                                                <div class="name">Product name</div>
-                                            <div class="size">
-                                                <a href="#">XS</a>
-                                                <a href="#">S</a>
-                                                <a href="#">M</a>
-                                                <a href="#">L</a>
-                                                <a href="#">XL</a>
-                                            </div>
-                                        </div>
-                                        <div class="prise d-flex align-items-center">65$</div>
+                                <div class="header_fig d-flex justify-content-between">
+                                    <div class="name_size">
+                                    <div class="name">Vyshyvanka</div>
+                                    <div class="size">
+                                        <a href="#" data-size="XS">XS</a>
+                                        <a href="#" data-size="S">S</a>
+                                        <a href="#" data-size="M">M</a>
+                                        <a href="#" data-size="L">L</a>
+                                        <a href="#" data-size="XL">XL</a>
                                     </div>
-                                    <div class="icon_shop d-flex justify-content-between">
-                                        <div class="like">
-                                            <a href="#">
-                                                <svg  width="50" height="50" viewBox="0 0 50 50" fill="white" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M26.2916 43.3542C25.5833 43.6042 24.4166 43.6042 23.7083 43.3542C17.6666 41.2917 4.16663 32.6875 4.16663 18.1042C4.16663 11.6667 9.35413 6.45834 15.75 6.45834C19.5416 6.45834 22.8958 8.29168 25 11.125C27.1041 8.29168 30.4791 6.45834 34.25 6.45834C40.6458 6.45834 45.8333 11.6667 45.8333 18.1042C45.8333 32.6875 32.3333 41.2917 26.2916 43.3542Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>  
-                                            </a>   
-                                        </div>
-                                        <div class="basket">
-                                            <a href="#">
-                                                <svg width="50" height="50" viewBox="0 0 50 50" fill="white" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M15.625 15.9792V13.9583C15.625 9.27082 19.3958 4.66665 24.0833 4.22915C29.6667 3.68749 34.375 8.08332 34.375 13.5625V16.4375M32.2823 25H32.301M17.6969 25H17.7156M18.75 45.8333H31.25C39.625 45.8333 41.125 42.4792 41.5625 38.3958L43.125 25.8958C43.6875 20.8125 42.2292 16.6667 33.3333 16.6667H16.6667C7.77084 16.6667 6.31251 20.8125 6.87501 25.8958L8.43751 38.3958C8.87501 42.4792 10.375 45.8333 18.75 45.8333Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg> 
-                                            </a>  
-                                        </div>
                                     </div>
+                                    <div class="prise d-flex align-items-center" data-price="65">65$</div>
+                                </div>
+                                <div class="icon_shop d-flex justify-content-between">
+                                    <div class="basket">
+                                    <button class="add-to-cart-btn">Add to Cart</button>
+                                    </div>
+                                </div>
                                 </figcaption>
                             </div>
         <!-- бокс три -->
-                            <div class="prod">
+                            <div class="product">
                                 <figure>
-                                    <a href="#">
-                                        <img src="images/images/vsh1 1.png" alt="img">
-                                    </a>
+                                <a href="pagesHTML/best/one.html">
+                                    <img src="images/images/vsh1 1.png" alt="img" class="product-image">
+                                </a>
                                 </figure>
                                 <figcaption>
-                                    <div class="header_fig d-flex justify-content-between">
-                                        <div class="name_size">
-                                                <div class="name">Product name</div>
-                                            <div class="size">
-                                                <a href="#">XS</a>
-                                                <a href="#">S</a>
-                                                <a href="#">M</a>
-                                                <a href="#">L</a>
-                                                <a href="#">XL</a>
-                                            </div>
-                                        </div>
-                                        <div class="prise d-flex align-items-center">65$</div>
+                                <div class="header_fig d-flex justify-content-between">
+                                    <div class="name_size">
+                                    <div class="name">Vyshyvanka</div>
+                                    <div class="size">
+                                        <a href="#" data-size="XS">XS</a>
+                                        <a href="#" data-size="S">S</a>
+                                        <a href="#" data-size="M">M</a>
+                                        <a href="#" data-size="L">L</a>
+                                        <a href="#" data-size="XL">XL</a>
                                     </div>
-                                    <div class="icon_shop d-flex justify-content-between">
-                                        <div class="like">
-                                            <a href="#">
-                                                <svg width="50" height="50" viewBox="0 0 50 50" fill="white" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M26.2916 43.3542C25.5833 43.6042 24.4166 43.6042 23.7083 43.3542C17.6666 41.2917 4.16663 32.6875 4.16663 18.1042C4.16663 11.6667 9.35413 6.45834 15.75 6.45834C19.5416 6.45834 22.8958 8.29168 25 11.125C27.1041 8.29168 30.4791 6.45834 34.25 6.45834C40.6458 6.45834 45.8333 11.6667 45.8333 18.1042C45.8333 32.6875 32.3333 41.2917 26.2916 43.3542Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg> 
-                                            </a>   
-                                        </div>
-                                        <div class="basket">
-                                            <a href="#">
-                                                <svg width="50" height="50" viewBox="0 0 50 50" fill="white" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M15.625 15.9792V13.9583C15.625 9.27082 19.3958 4.66665 24.0833 4.22915C29.6667 3.68749 34.375 8.08332 34.375 13.5625V16.4375M32.2823 25H32.301M17.6969 25H17.7156M18.75 45.8333H31.25C39.625 45.8333 41.125 42.4792 41.5625 38.3958L43.125 25.8958C43.6875 20.8125 42.2292 16.6667 33.3333 16.6667H16.6667C7.77084 16.6667 6.31251 20.8125 6.87501 25.8958L8.43751 38.3958C8.87501 42.4792 10.375 45.8333 18.75 45.8333Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg> 
-                                            </a>  
-                                        </div>
                                     </div>
+                                    <div class="prise d-flex align-items-center" data-price="65">65$</div>
+                                </div>
+                                <div class="icon_shop d-flex justify-content-between">
+                                    <div class="basket">
+                                    <button class="add-to-cart-btn">Add to Cart</button>
+                                    </div>
+                                </div>
                                 </figcaption>
                             </div>
         <!-- бокс четыре -->
-                            <div class="prod">
+                            <div class="product">
                                 <figure>
-                                    <a href="#">
-                                        <img src="images/images/vsh1 1.png" alt="img">
-                                    </a>
+                                <a href="pagesHTML/best/one.html">
+                                    <img src="images/images/vsh1 1.png" alt="img" class="product-image">
+                                </a>
                                 </figure>
                                 <figcaption>
-                                    <div class="header_fig d-flex justify-content-between">
-                                        <div class="name_size">
-                                                <div class="name">Product name</div>
-                                            <div class="size">
-                                                <a href="#">XS</a>
-                                                <a href="#">S</a>
-                                                <a href="#">M</a>
-                                                <a href="#">L</a>
-                                                <a href="#">XL</a>
-                                            </div>
-                                        </div>
-                                        <div class="prise d-flex align-items-center">65$</div>
+                                <div class="header_fig d-flex justify-content-between">
+                                    <div class="name_size">
+                                    <div class="name">Vyshyvanka</div>
+                                    <div class="size">
+                                        <a href="#" data-size="XS">XS</a>
+                                        <a href="#" data-size="S">S</a>
+                                        <a href="#" data-size="M">M</a>
+                                        <a href="#" data-size="L">L</a>
+                                        <a href="#" data-size="XL">XL</a>
                                     </div>
-                                    <div class="icon_shop d-flex justify-content-between">
-                                        <div class="like">
-                                            <a href="#">
-                                                <svg width="50" height="50" viewBox="0 0 50 50" fill="white" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M26.2916 43.3542C25.5833 43.6042 24.4166 43.6042 23.7083 43.3542C17.6666 41.2917 4.16663 32.6875 4.16663 18.1042C4.16663 11.6667 9.35413 6.45834 15.75 6.45834C19.5416 6.45834 22.8958 8.29168 25 11.125C27.1041 8.29168 30.4791 6.45834 34.25 6.45834C40.6458 6.45834 45.8333 11.6667 45.8333 18.1042C45.8333 32.6875 32.3333 41.2917 26.2916 43.3542Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg> 
-                                            </a>   
-                                        </div>
-                                        <div class="basket">
-                                            <a href="#">
-                                                <svg width="50" height="50" viewBox="0 0 50 50" fill="white" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M15.625 15.9792V13.9583C15.625 9.27082 19.3958 4.66665 24.0833 4.22915C29.6667 3.68749 34.375 8.08332 34.375 13.5625V16.4375M32.2823 25H32.301M17.6969 25H17.7156M18.75 45.8333H31.25C39.625 45.8333 41.125 42.4792 41.5625 38.3958L43.125 25.8958C43.6875 20.8125 42.2292 16.6667 33.3333 16.6667H16.6667C7.77084 16.6667 6.31251 20.8125 6.87501 25.8958L8.43751 38.3958C8.87501 42.4792 10.375 45.8333 18.75 45.8333Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg> 
-                                            </a>  
-                                        </div>
                                     </div>
+                                    <div class="prise d-flex align-items-center" data-price="65">65$</div>
+                                </div>
+                                <div class="icon_shop d-flex justify-content-between">
+                                    <div class="basket">
+                                    <button class="add-to-cart-btn">Add to Cart</button>
+                                    </div>
+                                </div>
                                 </figcaption>
                             </div>
                         </div>
@@ -238,159 +190,115 @@
                         </div>
                         <div class="item d-flex justify-content-between">
         <!-- бокс один -->
-                            <div class="prod">
+                            <div class="product">
                                 <figure>
-                                    <a href="#">
-                                        <img src="images/images/vsh1 1.png" alt="img">
-                                    </a>
+                                <a href="pagesHTML/best/one.html">
+                                    <img src="images/images/vsh1 1.png" alt="img" class="product-image">
+                                </a>
                                 </figure>
                                 <figcaption>
-                                    <div class="header_fig d-flex justify-content-between">
-                                        <div class="name_size">
-                                                <div class="name">Product name</div>
-                                            <div class="size">
-                                                <a href="#">XS</a>
-                                                <a href="#">S</a>
-                                                <a href="#">M</a>
-                                                <a href="#">L</a>
-                                                <a href="#">XL</a>
-                                            </div>
-                                        </div>
-                                        <div class="prise d-flex align-items-center">65$</div>
+                                <div class="header_fig d-flex justify-content-between">
+                                    <div class="name_size">
+                                    <div class="name">Vyshyvanka</div>
+                                    <div class="size">
+                                        <a href="#" data-size="XS">XS</a>
+                                        <a href="#" data-size="S">S</a>
+                                        <a href="#" data-size="M">M</a>
+                                        <a href="#" data-size="L">L</a>
+                                        <a href="#" data-size="XL">XL</a>
                                     </div>
-                                    <div class="icon_shop d-flex justify-content-between">
-                                        <div class="like">
-                                            <a href="#">
-                                                <svg width="50" height="50" viewBox="0 0 50 50" fill="white" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M26.2916 43.3542C25.5833 43.6042 24.4166 43.6042 23.7083 43.3542C17.6666 41.2917 4.16663 32.6875 4.16663 18.1042C4.16663 11.6667 9.35413 6.45834 15.75 6.45834C19.5416 6.45834 22.8958 8.29168 25 11.125C27.1041 8.29168 30.4791 6.45834 34.25 6.45834C40.6458 6.45834 45.8333 11.6667 45.8333 18.1042C45.8333 32.6875 32.3333 41.2917 26.2916 43.3542Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg> 
-                                            </a>   
-                                        </div>
-                                        <div class="basket">
-                                            <a href="#">
-                                                <svg width="50" height="50" viewBox="0 0 50 50" fill="white" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M15.625 15.9792V13.9583C15.625 9.27082 19.3958 4.66665 24.0833 4.22915C29.6667 3.68749 34.375 8.08332 34.375 13.5625V16.4375M32.2823 25H32.301M17.6969 25H17.7156M18.75 45.8333H31.25C39.625 45.8333 41.125 42.4792 41.5625 38.3958L43.125 25.8958C43.6875 20.8125 42.2292 16.6667 33.3333 16.6667H16.6667C7.77084 16.6667 6.31251 20.8125 6.87501 25.8958L8.43751 38.3958C8.87501 42.4792 10.375 45.8333 18.75 45.8333Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                            </a>  
-                                        </div>
                                     </div>
+                                    <div class="prise d-flex align-items-center" data-price="65">65$</div>
+                                </div>
+                                <div class="icon_shop d-flex justify-content-between">
+                                    <div class="basket">
+                                    <button class="add-to-cart-btn">Add to Cart</button>
+                                    </div>
+                                </div>
                                 </figcaption>
                             </div>
         <!-- бокс два -->
-                            <div class="prod">
+                            <div class="product">
                                 <figure>
-                                    <a href="#">
-                                        <img src="images/images/vsh1 1.png" alt="img">
-                                    </a>
+                                <a href="pagesHTML/best/one.html">
+                                    <img src="images/images/vsh1 1.png" alt="img" class="product-image">
+                                </a>
                                 </figure>
                                 <figcaption>
-                                    <div class="header_fig d-flex justify-content-between">
-                                        <div class="name_size">
-                                                <div class="name">Product name</div>
-                                            <div class="size">
-                                                <a href="#">XS</a>
-                                                <a href="#">S</a>
-                                                <a href="#">M</a>
-                                                <a href="#">L</a>
-                                                <a href="#">XL</a>
-                                            </div>
-                                        </div>
-                                        <div class="prise d-flex align-items-center">65$</div>
+                                <div class="header_fig d-flex justify-content-between">
+                                    <div class="name_size">
+                                    <div class="name">Vyshyvanka</div>
+                                    <div class="size">
+                                        <a href="#" data-size="XS">XS</a>
+                                        <a href="#" data-size="S">S</a>
+                                        <a href="#" data-size="M">M</a>
+                                        <a href="#" data-size="L">L</a>
+                                        <a href="#" data-size="XL">XL</a>
                                     </div>
-                                    <div class="icon_shop d-flex justify-content-between">
-                                        <div class="like">
-                                            <a href="#">
-                                                <svg width="50" height="50" viewBox="0 0 50 50" fill="white" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M26.2916 43.3542C25.5833 43.6042 24.4166 43.6042 23.7083 43.3542C17.6666 41.2917 4.16663 32.6875 4.16663 18.1042C4.16663 11.6667 9.35413 6.45834 15.75 6.45834C19.5416 6.45834 22.8958 8.29168 25 11.125C27.1041 8.29168 30.4791 6.45834 34.25 6.45834C40.6458 6.45834 45.8333 11.6667 45.8333 18.1042C45.8333 32.6875 32.3333 41.2917 26.2916 43.3542Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg> 
-                                            </a>   
-                                        </div>
-                                        <div class="basket">
-                                            <a href="#">
-                                                <svg width="50" height="50" viewBox="0 0 50 50" fill="white" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M15.625 15.9792V13.9583C15.625 9.27082 19.3958 4.66665 24.0833 4.22915C29.6667 3.68749 34.375 8.08332 34.375 13.5625V16.4375M32.2823 25H32.301M17.6969 25H17.7156M18.75 45.8333H31.25C39.625 45.8333 41.125 42.4792 41.5625 38.3958L43.125 25.8958C43.6875 20.8125 42.2292 16.6667 33.3333 16.6667H16.6667C7.77084 16.6667 6.31251 20.8125 6.87501 25.8958L8.43751 38.3958C8.87501 42.4792 10.375 45.8333 18.75 45.8333Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg> 
-                                            </a>  
-                                        </div>
                                     </div>
+                                    <div class="prise d-flex align-items-center" data-price="65">65$</div>
+                                </div>
+                                <div class="icon_shop d-flex justify-content-between">
+                                    <div class="basket">
+                                    <button class="add-to-cart-btn">Add to Cart</button>
+                                    </div>
+                                </div>
                                 </figcaption>
                             </div>
         <!-- бокс три -->
-                            <div class="prod">
+                            <div class="product">
                                 <figure>
-                                    <a href="#">
-                                        <img src="images/images/vsh1 1.png" alt="img">
-                                    </a>
+                                <a href="pagesHTML/best/one.html">
+                                    <img src="images/images/vsh1 1.png" alt="img" class="product-image">
+                                </a>
                                 </figure>
                                 <figcaption>
-                                    <div class="header_fig d-flex justify-content-between">
-                                        <div class="name_size">
-                                                <div class="name">Product name</div>
-                                            <div class="size">
-                                                <a href="#">XS</a>
-                                                <a href="#">S</a>
-                                                <a href="#">M</a>
-                                                <a href="#">L</a>
-                                                <a href="#">XL</a>
-                                            </div>
-                                        </div>
-                                        <div class="prise d-flex align-items-center">65$</div>
+                                <div class="header_fig d-flex justify-content-between">
+                                    <div class="name_size">
+                                    <div class="name">Vyshyvanka</div>
+                                    <div class="size">
+                                        <a href="#" data-size="XS">XS</a>
+                                        <a href="#" data-size="S">S</a>
+                                        <a href="#" data-size="M">M</a>
+                                        <a href="#" data-size="L">L</a>
+                                        <a href="#" data-size="XL">XL</a>
                                     </div>
-                                    <div class="icon_shop d-flex justify-content-between">
-                                        <div class="like">
-                                            <a href="#">
-                                                <svg width="50" height="50" viewBox="0 0 50 50" fill="white" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M26.2916 43.3542C25.5833 43.6042 24.4166 43.6042 23.7083 43.3542C17.6666 41.2917 4.16663 32.6875 4.16663 18.1042C4.16663 11.6667 9.35413 6.45834 15.75 6.45834C19.5416 6.45834 22.8958 8.29168 25 11.125C27.1041 8.29168 30.4791 6.45834 34.25 6.45834C40.6458 6.45834 45.8333 11.6667 45.8333 18.1042C45.8333 32.6875 32.3333 41.2917 26.2916 43.3542Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg> 
-                                            </a>   
-                                        </div>
-                                        <div class="basket">
-                                            <a href="#">
-                                                <svg width="50" height="50" viewBox="0 0 50 50" fill="white" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M15.625 15.9792V13.9583C15.625 9.27082 19.3958 4.66665 24.0833 4.22915C29.6667 3.68749 34.375 8.08332 34.375 13.5625V16.4375M32.2823 25H32.301M17.6969 25H17.7156M18.75 45.8333H31.25C39.625 45.8333 41.125 42.4792 41.5625 38.3958L43.125 25.8958C43.6875 20.8125 42.2292 16.6667 33.3333 16.6667H16.6667C7.77084 16.6667 6.31251 20.8125 6.87501 25.8958L8.43751 38.3958C8.87501 42.4792 10.375 45.8333 18.75 45.8333Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg> 
-                                            </a>  
-                                        </div>
                                     </div>
+                                    <div class="prise d-flex align-items-center" data-price="65">65$</div>
+                                </div>
+                                <div class="icon_shop d-flex justify-content-between">
+                                    <div class="basket">
+                                    <button class="add-to-cart-btn">Add to Cart</button>
+                                    </div>
+                                </div>
                                 </figcaption>
                             </div>
         <!-- бокс четыре -->
-                            <div class="prod">
+                            <div class="product">
                                 <figure>
-                                    <a href="#">
-                                        <img src="images/images/vsh1 1.png" alt="img">
-                                    </a>
+                                <a href="pagesHTML/best/one.html">
+                                    <img src="images/images/vsh1 1.png" alt="img" class="product-image">
+                                </a>
                                 </figure>
                                 <figcaption>
-                                    <div class="header_fig d-flex justify-content-between">
-                                        <div class="name_size">
-                                                <div class="name">Product name</div>
-                                            <div class="size">
-                                                <a href="#">XS</a>
-                                                <a href="#">S</a>
-                                                <a href="#">M</a>
-                                                <a href="#">L</a>
-                                                <a href="#">XL</a>
-                                            </div>
-                                        </div>
-                                        <div class="prise d-flex align-items-center">65$</div>
+                                <div class="header_fig d-flex justify-content-between">
+                                    <div class="name_size">
+                                    <div class="name">Vyshyvanka</div>
+                                    <div class="size">
+                                        <a href="#" data-size="XS">XS</a>
+                                        <a href="#" data-size="S">S</a>
+                                        <a href="#" data-size="M">M</a>
+                                        <a href="#" data-size="L">L</a>
+                                        <a href="#" data-size="XL">XL</a>
                                     </div>
-                                    <div class="icon_shop d-flex justify-content-between">
-                                        <div class="like">
-                                            <a href="#">
-                                                <svg width="50" height="50" viewBox="0 0 50 50" fill="white" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M26.2916 43.3542C25.5833 43.6042 24.4166 43.6042 23.7083 43.3542C17.6666 41.2917 4.16663 32.6875 4.16663 18.1042C4.16663 11.6667 9.35413 6.45834 15.75 6.45834C19.5416 6.45834 22.8958 8.29168 25 11.125C27.1041 8.29168 30.4791 6.45834 34.25 6.45834C40.6458 6.45834 45.8333 11.6667 45.8333 18.1042C45.8333 32.6875 32.3333 41.2917 26.2916 43.3542Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg> 
-                                            </a>   
-                                        </div>
-                                        <div class="basket">
-                                            <a href="#">
-                                                <svg width="50" height="50" viewBox="0 0 50 50" fill="white" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M15.625 15.9792V13.9583C15.625 9.27082 19.3958 4.66665 24.0833 4.22915C29.6667 3.68749 34.375 8.08332 34.375 13.5625V16.4375M32.2823 25H32.301M17.6969 25H17.7156M18.75 45.8333H31.25C39.625 45.8333 41.125 42.4792 41.5625 38.3958L43.125 25.8958C43.6875 20.8125 42.2292 16.6667 33.3333 16.6667H16.6667C7.77084 16.6667 6.31251 20.8125 6.87501 25.8958L8.43751 38.3958C8.87501 42.4792 10.375 45.8333 18.75 45.8333Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg> 
-                                            </a>  
-                                        </div>
                                     </div>
+                                    <div class="prise d-flex align-items-center" data-price="65">65$</div>
+                                </div>
+                                <div class="icon_shop d-flex justify-content-between">
+                                    <div class="basket">
+                                    <button class="add-to-cart-btn">Add to Cart</button>
+                                    </div>
+                                </div>
                                 </figcaption>
                             </div>
                         </div>
@@ -401,159 +309,115 @@
                         </div>
                         <div class="item d-flex justify-content-between">
         <!-- бокс один -->
-                            <div class="prod">
+                            <div class="product">
                                 <figure>
-                                    <a href="#">
-                                        <img src="images/images/vsh1 1.png" alt="img">
-                                    </a>
+                                <a href="pagesHTML/best/one.html">
+                                    <img src="images/images/vsh1 1.png" alt="img" class="product-image">
+                                </a>
                                 </figure>
                                 <figcaption>
-                                    <div class="header_fig d-flex justify-content-between">
-                                        <div class="name_size">
-                                                <div class="name">Product name</div>
-                                            <div class="size">
-                                                <a href="#">XS</a>
-                                                <a href="#">S</a>
-                                                <a href="#">M</a>
-                                                <a href="#">L</a>
-                                                <a href="#">XL</a>
-                                            </div>
-                                        </div>
-                                        <div class="prise d-flex align-items-center">65$</div>
+                                <div class="header_fig d-flex justify-content-between">
+                                    <div class="name_size">
+                                    <div class="name">Vyshyvanka</div>
+                                    <div class="size">
+                                        <a href="#" data-size="XS">XS</a>
+                                        <a href="#" data-size="S">S</a>
+                                        <a href="#" data-size="M">M</a>
+                                        <a href="#" data-size="L">L</a>
+                                        <a href="#" data-size="XL">XL</a>
                                     </div>
-                                    <div class="icon_shop d-flex justify-content-between">
-                                        <div class="like">
-                                            <a href="#">
-                                                <svg width="50" height="50" viewBox="0 0 50 50" fill="white" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M26.2916 43.3542C25.5833 43.6042 24.4166 43.6042 23.7083 43.3542C17.6666 41.2917 4.16663 32.6875 4.16663 18.1042C4.16663 11.6667 9.35413 6.45834 15.75 6.45834C19.5416 6.45834 22.8958 8.29168 25 11.125C27.1041 8.29168 30.4791 6.45834 34.25 6.45834C40.6458 6.45834 45.8333 11.6667 45.8333 18.1042C45.8333 32.6875 32.3333 41.2917 26.2916 43.3542Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg> 
-                                            </a>   
-                                        </div>
-                                        <div class="basket">
-                                            <a href="#">
-                                                <svg width="50" height="50" viewBox="0 0 50 50" fill="white" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M15.625 15.9792V13.9583C15.625 9.27082 19.3958 4.66665 24.0833 4.22915C29.6667 3.68749 34.375 8.08332 34.375 13.5625V16.4375M32.2823 25H32.301M17.6969 25H17.7156M18.75 45.8333H31.25C39.625 45.8333 41.125 42.4792 41.5625 38.3958L43.125 25.8958C43.6875 20.8125 42.2292 16.6667 33.3333 16.6667H16.6667C7.77084 16.6667 6.31251 20.8125 6.87501 25.8958L8.43751 38.3958C8.87501 42.4792 10.375 45.8333 18.75 45.8333Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg> 
-                                            </a>  
-                                        </div>
                                     </div>
+                                    <div class="prise d-flex align-items-center" data-price="65">65$</div>
+                                </div>
+                                <div class="icon_shop d-flex justify-content-between">
+                                    <div class="basket">
+                                    <button class="add-to-cart-btn">Add to Cart</button>
+                                    </div>
+                                </div>
                                 </figcaption>
                             </div>
         <!-- бокс два -->
-                            <div class="prod">
+                            <div class="product">
                                 <figure>
-                                    <a href="#">
-                                        <img src="images/images/vsh1 1.png" alt="img">
-                                    </a>
+                                <a href="pagesHTML/best/one.html">
+                                    <img src="images/images/vsh1 1.png" alt="img" class="product-image">
+                                </a>
                                 </figure>
                                 <figcaption>
-                                    <div class="header_fig d-flex justify-content-between">
-                                        <div class="name_size">
-                                                <div class="name">Product name</div>
-                                            <div class="size">
-                                                <a href="#">XS</a>
-                                                <a href="#">S</a>
-                                                <a href="#">M</a>
-                                                <a href="#">L</a>
-                                                <a href="#">XL</a>
-                                            </div>
-                                        </div>
-                                        <div class="prise d-flex align-items-center">65$</div>
+                                <div class="header_fig d-flex justify-content-between">
+                                    <div class="name_size">
+                                    <div class="name">Vyshyvanka</div>
+                                    <div class="size">
+                                        <a href="#" data-size="XS">XS</a>
+                                        <a href="#" data-size="S">S</a>
+                                        <a href="#" data-size="M">M</a>
+                                        <a href="#" data-size="L">L</a>
+                                        <a href="#" data-size="XL">XL</a>
                                     </div>
-                                    <div class="icon_shop d-flex justify-content-between">
-                                        <div class="like">
-                                            <a href="#">
-                                                <svg width="50" height="50" viewBox="0 0 50 50" fill="white" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M26.2916 43.3542C25.5833 43.6042 24.4166 43.6042 23.7083 43.3542C17.6666 41.2917 4.16663 32.6875 4.16663 18.1042C4.16663 11.6667 9.35413 6.45834 15.75 6.45834C19.5416 6.45834 22.8958 8.29168 25 11.125C27.1041 8.29168 30.4791 6.45834 34.25 6.45834C40.6458 6.45834 45.8333 11.6667 45.8333 18.1042C45.8333 32.6875 32.3333 41.2917 26.2916 43.3542Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg> 
-                                            </a>   
-                                        </div>
-                                        <div class="basket">
-                                            <a href="#">
-                                                <svg width="50" height="50" viewBox="0 0 50 50" fill="white" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M15.625 15.9792V13.9583C15.625 9.27082 19.3958 4.66665 24.0833 4.22915C29.6667 3.68749 34.375 8.08332 34.375 13.5625V16.4375M32.2823 25H32.301M17.6969 25H17.7156M18.75 45.8333H31.25C39.625 45.8333 41.125 42.4792 41.5625 38.3958L43.125 25.8958C43.6875 20.8125 42.2292 16.6667 33.3333 16.6667H16.6667C7.77084 16.6667 6.31251 20.8125 6.87501 25.8958L8.43751 38.3958C8.87501 42.4792 10.375 45.8333 18.75 45.8333Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg> 
-                                            </a>  
-                                        </div>
                                     </div>
+                                    <div class="prise d-flex align-items-center" data-price="65">65$</div>
+                                </div>
+                                <div class="icon_shop d-flex justify-content-between">
+                                    <div class="basket">
+                                    <button class="add-to-cart-btn">Add to Cart</button>
+                                    </div>
+                                </div>
                                 </figcaption>
                             </div>
         <!-- бокс три -->
-                            <div class="prod">
+                            <div class="product">
                                 <figure>
-                                    <a href="#">
-                                        <img src="images/images/vsh1 1.png" alt="img">
-                                    </a>
+                                <a href="pagesHTML/best/one.html">
+                                    <img src="images/images/vsh1 1.png" alt="img" class="product-image">
+                                </a>
                                 </figure>
                                 <figcaption>
-                                    <div class="header_fig d-flex justify-content-between">
-                                        <div class="name_size">
-                                                <div class="name">Product name</div>
-                                            <div class="size">
-                                                <a href="#">XS</a>
-                                                <a href="#">S</a>
-                                                <a href="#">M</a>
-                                                <a href="#">L</a>
-                                                <a href="#">XL</a>
-                                            </div>
-                                        </div>
-                                        <div class="prise d-flex align-items-center">65$</div>
+                                <div class="header_fig d-flex justify-content-between">
+                                    <div class="name_size">
+                                    <div class="name">Vyshyvanka</div>
+                                    <div class="size">
+                                        <a href="#" data-size="XS">XS</a>
+                                        <a href="#" data-size="S">S</a>
+                                        <a href="#" data-size="M">M</a>
+                                        <a href="#" data-size="L">L</a>
+                                        <a href="#" data-size="XL">XL</a>
                                     </div>
-                                    <div class="icon_shop d-flex justify-content-between">
-                                        <div class="like">
-                                            <a href="#">
-                                                <svg width="50" height="50" viewBox="0 0 50 50" fill="white" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M26.2916 43.3542C25.5833 43.6042 24.4166 43.6042 23.7083 43.3542C17.6666 41.2917 4.16663 32.6875 4.16663 18.1042C4.16663 11.6667 9.35413 6.45834 15.75 6.45834C19.5416 6.45834 22.8958 8.29168 25 11.125C27.1041 8.29168 30.4791 6.45834 34.25 6.45834C40.6458 6.45834 45.8333 11.6667 45.8333 18.1042C45.8333 32.6875 32.3333 41.2917 26.2916 43.3542Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg> 
-                                            </a>   
-                                        </div>
-                                        <div class="basket">
-                                            <a href="#">
-                                                <svg width="50" height="50" viewBox="0 0 50 50" fill="white" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M15.625 15.9792V13.9583C15.625 9.27082 19.3958 4.66665 24.0833 4.22915C29.6667 3.68749 34.375 8.08332 34.375 13.5625V16.4375M32.2823 25H32.301M17.6969 25H17.7156M18.75 45.8333H31.25C39.625 45.8333 41.125 42.4792 41.5625 38.3958L43.125 25.8958C43.6875 20.8125 42.2292 16.6667 33.3333 16.6667H16.6667C7.77084 16.6667 6.31251 20.8125 6.87501 25.8958L8.43751 38.3958C8.87501 42.4792 10.375 45.8333 18.75 45.8333Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg> 
-                                            </a>  
-                                        </div>
                                     </div>
+                                    <div class="prise d-flex align-items-center" data-price="65">65$</div>
+                                </div>
+                                <div class="icon_shop d-flex justify-content-between">
+                                    <div class="basket">
+                                    <button class="add-to-cart-btn">Add to Cart</button>
+                                    </div>
+                                </div>
                                 </figcaption>
                             </div>
         <!-- бокс четыре -->
-                            <div class="prod">
+                            <div class="product">
                                 <figure>
-                                    <a href="#">
-                                        <img src="images/images/vsh1 1.png" alt="img">
-                                    </a>
+                                <a href="pagesHTML/best/one.html">
+                                    <img src="images/images/vsh1 1.png" alt="img" class="product-image">
+                                </a>
                                 </figure>
                                 <figcaption>
-                                    <div class="header_fig d-flex justify-content-between">
-                                        <div class="name_size">
-                                                <div class="name">Product name</div>
-                                            <div class="size">
-                                                <a href="#">XS</a>
-                                                <a href="#">S</a>
-                                                <a href="#">M</a>
-                                                <a href="#">L</a>
-                                                <a href="#">XL</a>
-                                            </div>
-                                        </div>
-                                        <div class="prise d-flex align-items-center">65$</div>
+                                <div class="header_fig d-flex justify-content-between">
+                                    <div class="name_size">
+                                    <div class="name">Vyshyvanka</div>
+                                    <div class="size">
+                                        <a href="#" data-size="XS">XS</a>
+                                        <a href="#" data-size="S">S</a>
+                                        <a href="#" data-size="M">M</a>
+                                        <a href="#" data-size="L">L</a>
+                                        <a href="#" data-size="XL">XL</a>
                                     </div>
-                                    <div class="icon_shop d-flex justify-content-between">
-                                        <div class="like"> 
-                                            <a href="#">
-                                                <svg width="50" height="50" viewBox="0 0 50 50" fill="white" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M26.2916 43.3542C25.5833 43.6042 24.4166 43.6042 23.7083 43.3542C17.6666 41.2917 4.16663 32.6875 4.16663 18.1042C4.16663 11.6667 9.35413 6.45834 15.75 6.45834C19.5416 6.45834 22.8958 8.29168 25 11.125C27.1041 8.29168 30.4791 6.45834 34.25 6.45834C40.6458 6.45834 45.8333 11.6667 45.8333 18.1042C45.8333 32.6875 32.3333 41.2917 26.2916 43.3542Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg> 
-                                            </a>   
-                                        </div>
-                                        <div class="basket">
-                                            <a href="#">
-                                                <svg width="50" height="50" viewBox="0 0 50 50" fill="white" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M15.625 15.9792V13.9583C15.625 9.27082 19.3958 4.66665 24.0833 4.22915C29.6667 3.68749 34.375 8.08332 34.375 13.5625V16.4375M32.2823 25H32.301M17.6969 25H17.7156M18.75 45.8333H31.25C39.625 45.8333 41.125 42.4792 41.5625 38.3958L43.125 25.8958C43.6875 20.8125 42.2292 16.6667 33.3333 16.6667H16.6667C7.77084 16.6667 6.31251 20.8125 6.87501 25.8958L8.43751 38.3958C8.87501 42.4792 10.375 45.8333 18.75 45.8333Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg> 
-                                            </a>  
-                                        </div>
                                     </div>
+                                    <div class="prise d-flex align-items-center" data-price="65">65$</div>
+                                </div>
+                                <div class="icon_shop d-flex justify-content-between">
+                                    <div class="basket">
+                                    <button class="add-to-cart-btn">Add to Cart</button>
+                                    </div>
+                                </div>
                                 </figcaption>
                             </div>
                         </div>
@@ -567,6 +431,39 @@
                     </div>
                 </div>
             </section>
+
+            <!-- Корзина -->
+
+            <section id="cart-section" class="backet_section">
+                <div class="container">
+                    
+                    <div class="header_basket">
+                        <h2>Basket</h2>
+                        <button id="close-cart" aria-label="Close cart">✖</button>
+                    </div>
+
+                    <div class="cart" id="cart"></div>
+
+                    <form id="order-form" action="https://formspree.io/f/xrbqbjkp" method="POST">
+                    <input  type="hidden" name="orderSummary" id="orderSummary">
+                    
+                    <label class="phone">Phone:</label>
+                    <input value="+1" class="phone_input d-block" type="tel" name="phone" required><br>
+
+                    <label class="comment">Comment:</label>
+                    <textarea id="user-info" class="d-block" name="comment" rows="3">
+Surname: 
+First Name:
+City: 
+Post office number:
+Address (optional)
+                    </textarea><br>
+
+                    <button class="submit" type="submit">Send an order</button>
+                    </form>
+
+                </div>
+            </section>
         </main>
 
         
@@ -576,8 +473,8 @@
     
     <footer>
         <div class="container ">
-            <nav class="d-flex justify-content-between align-items-center">
-                <div class="navigation col-4">
+            <nav class="d-flex justify-content-around align-items-center">
+                <!-- <div class="navigation col-4">
                     <div class="title">Site Navigation</div>
                     <div class="subtitle">
                         <a href="index.html">Home</a>
@@ -592,8 +489,7 @@
                         <a href="#">About Us</a>
                         <a class="d-block" href="#">About embroidered shirts</a>
                     </div>
-                </div>
-                <div class="media col-4 d-flex justify-content-end">
+                </div> -->
                     <div class="support">
                         <div class="title">Support</div>
                         <div class="icon text-center">
@@ -619,7 +515,6 @@
                             </a>
                         </div>
                     </div>
-                </div>
             </nav>
         </div>
     </footer>
@@ -628,6 +523,6 @@
 </html>
 
     </div>
-
+    <script src="js/script.js"></script>
 </body>
 </html>
