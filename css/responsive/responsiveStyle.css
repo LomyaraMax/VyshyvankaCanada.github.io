@@ -1,5 +1,13 @@
 @media (max-width: 900px) {
 
+    footer .container {
+        padding: 2px;
+    }
+
+    header .container {
+        padding: 1px;
+    }
+
     main .item {
         justify-content: space-around !important;
     }
@@ -19,4 +27,3 @@
         width: 19rem;
     }
 }
-
