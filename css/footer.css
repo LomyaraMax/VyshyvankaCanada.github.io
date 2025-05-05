@@ -1,63 +1,47 @@
-:root {
-  --color-red: #DC5356;
-  --color-blue: #536ADC;
-  --color-blue-two: #3B4980;
-  --color-black: #000000;
-  --color-black_size: #202020;
-  --color-grey: #707070;
-  --color-grey-hover: #F5F5F5;
-  --box-shadow:  0px 5px 10px rgba(0, 0, 0, 0.25);
-  --border-solid: solid 2px rgba(0, 0, 0, 0.4);
-  --transition: all 0.3s ease 0s; }
-
-ul, p, h1, h2, h3, figure, figcaption {
-  margin: 0;
-  padding: 0; }
-
-li {
-  list-style: none; }
-
-a {
-  text-decoration: none !important; }
-
-.clear {
-  clear: both; }
-
-* {
-  block-size: border-box;
-  margin: 0;
-  padding: 0; }
-
-body {
-  background-color: #f8f8f8; }
+@import "nyllStyle.scss";
 
 footer {
-  background-color: #2C2C2C;
-  font-family: 'Afacad'; }
-  footer .container {
-    max-width: 1250px;
-    padding: 15px; }
-    footer .container nav {
-      width: 100%; }
-      footer .container nav .title {
-        color: #ffff;
-        font-weight: 400;
-        font-size: 24px; }
-      footer .container nav .navigation a, footer .container nav .subtitle a {
-        color: #c2c2c2;
-        font-size: 18px;
-        font-weight: 300;
-        -webkit-transition: var(--transition);
-        -o-transition: var(--transition);
-        transition: var(--transition); }
-      footer .container nav .support {
-        margin-right: 24px; }
-      footer .container nav .social {
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
-      footer .container nav .media {
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        gap: 0 10px; }
-      footer .container nav a:hover {
-        color: #ffff; }
+    background-color: #2C2C2C;
+    font-family: 'Afacad';
+
+    .container {
+        max-width: 1250px;
+        padding: 15px;
+        nav {
+            width: 100%;
+
+            .title {
+                color: #ffff;
+                font-weight: 400;
+                font-size: 24px;
+            }
+
+            .navigation, .subtitle {
+                a {
+                    color: #c2c2c2;
+                    font-size: 18px;
+                    font-weight: 300;
+                    transition: var(--transition);
+                }
+            }
+
+            .support {
+                margin-right: 24px;
+            }
+
+            .social {
+                flex-wrap: wrap;
+            }
+
+            .media {
+                flex-wrap: wrap;
+                gap: 0 10px;
+            }
+
+            a:hover {
+                color: #ffff;
+                
+            }
+        }
+    }
+}
